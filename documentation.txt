@@ -1,1 +1,17 @@
 This file contains documentation for the mini project
+Building a small banking system
+
+Class Account
+	data members
+		name
+		salary	
+		type
+	member functions
+		constructor 	--default and parameterized constructor 
+		changeSalary	--function used to edit the salary of current account
+		Display 		--function to display account details 
+Class BasicUsage 	-- inherits the Account class
+	member functions
+		credit	--function to add money to account
+		debit	--function to debit money from account
+		
