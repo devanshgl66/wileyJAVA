@@ -4,14 +4,15 @@ Building a small banking system
 Class Account
 	data members
 		name
-		salary	
+		balance	
 		type
 	member functions
 		constructor 	--default and parameterized constructor 
-		changeSalary	--function used to edit the salary of current account
+		getter and setter for balance	--function used to edit the balance of current account
 		Display 		--function to display account details 
 Class BasicUsage 	-- inherits the Account class
 	member functions
 		credit	--function to add money to account
 		debit	--function to debit money from account
+			show insufficient balance if amount is greater than bal
 		
