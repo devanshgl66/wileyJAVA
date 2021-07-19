@@ -1,20 +1,20 @@
 package dataStructure;
 
-class ll<T>{
+class Node<T>{
 	T data;
-	ll<T> next;
-	ll(T data,ll<T>link){
+	Node<T> next;
+	Node(T data,Node<T>link){
 		this.data=data;
 		this.next=link;
 	}
 }
 class linkedlist{
-	ll<Integer> head=null;
+	Node<Integer> head=null;
 	void insertInBeg(int data) {
 		if(head==null)
-			head=new ll<Integer>(data,null);
+			head=new Node<Integer>(data,null);
 		else {
-			ll<Integer>newHead=new ll<Integer>(data,head);
+			Node<Integer>newHead=new Node<Integer>(data,head);
 			head=newHead;
 		}
 	}
@@ -28,7 +28,7 @@ class linkedlist{
 		return d;		
 	}
 	void traverse() {
-		ll<Integer>temp=head;
+		Node<Integer>temp=head;
 		while(temp!=null) {
 			System.out.println(temp.data);
 			temp=temp.next;
