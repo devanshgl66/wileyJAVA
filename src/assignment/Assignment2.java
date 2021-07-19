@@ -58,7 +58,7 @@ class Bank {
 			loadBalancer=1;
 		}
 		if (amount != 0) {
-			System.out.println("Error: "+amount);
+//			System.out.println("Error: "+amount);
 			System.out.println("Amount can't be provided");
 			notes.putAll(m);
 		} else
